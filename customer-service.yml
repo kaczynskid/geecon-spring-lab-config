@@ -1,0 +1,20 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/postgres
+    username: postgres
+    password: geecon
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+    deserialization:
+      USE_BIG_DECIMAL_FOR_FLOATS: true
+      FAIL_ON_UNKNOWN_PROPERTIES: false
+
+customer:
+  blacklist: Hitler,Stalin

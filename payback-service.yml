@@ -1,0 +1,11 @@
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo/payback
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+    deserialization:
+      USE_BIG_DECIMAL_FOR_FLOATS: true
+      FAIL_ON_UNKNOWN_PROPERTIES: false
